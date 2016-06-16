@@ -7,10 +7,10 @@
       <!-- Compiled and minified CSS -->
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/css/materialize.min.css">
       <link rel="stylesheet" type="text/css" href="css/taggd.css" />
-        <link rel="stylesheet" type="text/css" href="css/style.css" />
+
 <!-- Latest compiled and minified CSS -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-        
+      <link rel="stylesheet" type="text/css" href="css/style.css" />
         
         
       <!--Let browser know website is optimized for mobile-->
@@ -34,9 +34,9 @@
 
         <div>
             
-            <h1 class="header1">
+            <h1>
                 Instructions</h1>
-            <h2 class="header2">  Please answer the following 6 questions which asked you to describe the change(s) that you see between two photos. Please click on the example button above to see an example of how to complete the task.  Once you are done with answering the questions, press the submit button at the end of the page.  Thank you!<br>
+            <h2>  Please answer the following 6 questions which asked you to describe the change(s) that you see between two photos. Please click on the example button above to see an example of how to complete the task.  Once you are done with answering the questions, press the submit button at the end of the page.  Thank you!<br>
                
         
          
@@ -51,7 +51,7 @@
       <form id="mturk_form">
 
         <div class="section" id="1">
-          <h5 class="header5">1. Describe the change from the first photo (original) to the second photo (altered).</h5>
+          <h5>1. Describe the change from the first photo (original) to the second photo (altered).</h5>
           <p>Separate each word or phrase with a semi-colon. <br></p>
          <div class="row">  
             <div class="col-md-6">
@@ -75,7 +75,7 @@
         
         <div class="section" id="2">
             <br><br><br>
-           <h5 class="header5">2. Describe the change from the first photo (original) to the second photo (altered).</h5>
+           <h5>2. Describe the change from the first photo (original) to the second photo (altered).</h5>
           <p>Separate each word or phrase with a semi-colon. <br></p>
          <div class="row">  
             <div class="col-md-6">
@@ -100,7 +100,7 @@
 
  <div class="section" id="3">
             <br><br><br>
-           <h5 class="header5">3. Describe the change from the first photo (original) to the second photo (altered).</h5>
+           <h5>3. Describe the change from the first photo (original) to the second photo (altered).</h5>
          <p>Separate each word or phrase with a semi-colon.<br></p>
          <div class="row">  
             <div class="col-md-6">
@@ -125,7 +125,7 @@
 
  <div class="section" id="4">
             <br><br><br>
-           <h5 class="header5">4. Describe the change from the first photo (original) to the second photo (altered).</h5>
+           <h5>4. Describe the change from the first photo (original) to the second photo (altered).</h5>
           <p>Separate each word or phrase with a semi-colon.  <br></p>
          <div class="row">  
             <div class="col-md-6">
@@ -149,7 +149,7 @@
 
 <div class="section" id="5">
             <br><br><br>
-           <h5 class="header5">5. Describe the change from the first photo (original) to the second photo (altered).</h5>
+           <h5>5. Describe the change from the first photo (original) to the second photo (altered).</h5>
           <p>Separate each word or phrase with a semi-colon.  <br></p>
          <div class="row">  
             <div class="col-md-6">
@@ -173,7 +173,7 @@
 
 <div class="section" id="6">
             <br><br><br>
-           <h5 class="header5">6. Describe the change from the first photo (original) to the second photo (altered).</h5>
+           <h5>6. Describe the change from the first photo (original) to the second photo (altered).</h5>
           <p>Separate each word or phrase with a semi-colon. <br></p>
          <div class="row">  
             <div class="col-md-6">
@@ -197,7 +197,7 @@
 
 <div class="section" id="7">
             <br><br><br>
-           <h5 class="header5">Have you used creative software before?  Examples are Adobe Photoshop, Sketch, GIMP, etc). </h5>
+           <h5>Have you used creative software before?  Examples are Adobe Photoshop, Sketch, GIMP, etc). </h5>
   
     <p>
      <input name="group1" type="radio" id="test1" />
@@ -276,38 +276,7 @@
 
 
       <script src="js/mturk.js"></script>
-      <script type="text/javascript" src="js/jquery.taggd.min.js"></script>
-      
-      <script type="text/javascript">
-        var data = [];
-        var settings = [];
 
-        $(window).load(function() {
-          $('.taggd').each(function(i, e) {
-            var $e = $(e);
-
-            $e.taggd(settings[i]);
-            $e.taggd('items', data[i])
-          });
-        });
-      </script>
-      <script type="text/javascript">
-        data.push([
-        { x: 0.512, y: 0.33, text: 'Huey' },
-        { x: 0.548, y: 0.33, text: 'Dewey' },
-        { x: 0.567, y: 0.36, text: 'Louie' }
-        ]);
-
-        settings.push({
-        align: { 'y': 'bottom' },
-        offset: { 'top': -15 },
-
-        'handlers': {
-        'mouseenter': 'show',
-        'mouseleave': 'hide'
-        }
-      });
-      </script>
 
       <script>
       $(document).ready(function(){

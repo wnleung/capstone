@@ -19,13 +19,13 @@
   
 }
 
-.header1  {
+h1  {
     
     font-size: 19px;
     font-weight: 500;
 }
 
-.header2 {
+h2 {
     
     font-size: 15px;
       font-weight: 400;
@@ -38,7 +38,7 @@ input[type="text"] {
     color: black;
 }
 
-.header5 {
+h5 {
     font-size: 16px;
 }
 
@@ -46,3 +46,4 @@ input[type="text"] {
     font-style: italic;
     color: darkblue;
 }
+
